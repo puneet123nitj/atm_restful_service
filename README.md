@@ -1,5 +1,6 @@
 
-atm_restful_service
+**atm_restful_service
+
 'atm_restful_service' is back-end system for ATM machines. It implements Rest API’s for ATM Backend service which can be used by all Indian Banks. ATM (Automated  Teller Machine) is a banking application developed to perform different banking transactions.
 
 atm_restful_service is developed using spring boot framaework.It uses in-memory H2 Database as a db source.We are using JPA for all db transactions.
@@ -14,16 +15,16 @@ atm_restful_service have the following functionalities:
 Running the Application
 please first do maven update and then run the applicationa as spring boot app.
 
-API's Signatures
+**API's Signatures
 
-1.Create Account: 
+**1.Create Account: 
 
 Method: POST
 
 url   : http://localhost:8080/atm/create-account?accountHolderName={accountHolderName}t&pin={pin}&balance={balance}
 
 
-paramters               type  
+**paramters               type  
 
   accountHolderName       Required
   
@@ -34,28 +35,28 @@ paramters               type
 
 Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&pin=1234
 
-2.Check balance: 
+**2.Check balance: 
  
  Method: GET
  
  url   : http://localhost:8080/atm/check-balance?accountNumber={accountNumber}
 
  
- paramters               type  
+ **paramters               type  
  
  accountNumber           Required
   
  
  Example  :   http://localhost:8080/atm/check-balance?accountNumber=1000
 
-3.Deposit Money:
+**3.Deposit Money:
  
  Method: GET
  
  url   : http://localhost:8080/atm/deposit?accountNumber={accountNumber}&amount={depositAmount}
 
  
- paramters               type  
+ **paramters               type  
  
  accountNumber           Required
  
@@ -64,14 +65,14 @@ Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&p
   
   Example  :   http://localhost:8080/atm/deposit?accountNumber=1000&amount=2
   
- 4.Withdraw Money:
+ **4.Withdraw Money:
   
   Method: GET
   
   url   : http://localhost:8080/atm/withdraw?accountNumber={accountNumber}&amount={withdrawAmount}
 
   
-  paramters               type  
+ **paramters               type  
   
   accountNumber           Required
   
