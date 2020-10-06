@@ -69,4 +69,9 @@ Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&p
 
   
   Example  :   http://localhost:8080/atm/withdraw?accountNumber=1000&amount=1
+  
+  
+  **UML Diagram Link**
+  
+  https://drive.google.com/file/d/10rnDusLly0Do5YYpwtnwMSZq93ZgLVa5/view?usp=sharing
 
