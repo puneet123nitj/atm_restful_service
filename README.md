@@ -24,15 +24,10 @@ Method: POST
 
 url   : http://localhost:8080/atm/create-account?accountHolderName={accountHolderName}t&pin={pin}&balance={balance}
 
+|**paramters** | accountHolderName| pin | balance| 
+|:--: | :---: | :---: | :---: |
+|**type** | Required | Required |  optional (by default set 0.0 if not provided at the time of creation)| 
 
-**paramters               type** 
-
-  accountHolderName       Required
-  
-  pin                     Required
-  
-  balance                 optional (by default set 0.0 if not provided at the time of creation)
-  
 
 Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&pin=1234
 
@@ -42,11 +37,9 @@ Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&p
  
  url   : http://localhost:8080/atm/check-balance?accountNumber={accountNumber}
 
- 
- **paramters               type**  
- 
- accountNumber           Required
-  
+ |**paramters** | accountNumber| 
+ |:--: | :---: |
+ |**type** | Required |
  
  Example  :   http://localhost:8080/atm/check-balance?accountNumber=1000
 
@@ -56,12 +49,9 @@ Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&p
  
  url   : http://localhost:8080/atm/deposit?accountNumber={accountNumber}&amount={depositAmount}
 
- 
- **paramters               type** 
- 
- accountNumber           Required
- 
- depositAmount           Required
+  |**paramters** | accountNumber| depositAmount|
+ |:--: | :---: |:---:|
+ |**type** | Required |Required|
   
   
   Example  :   http://localhost:8080/atm/deposit?accountNumber=1000&amount=2
@@ -73,11 +63,9 @@ Example  :   http://localhost:8080/atm/create-account?accountHolderName=puneet&p
   url   : http://localhost:8080/atm/withdraw?accountNumber={accountNumber}&amount={withdrawAmount}
 
   
- **paramters               type**  
-  
-  accountNumber           Required
-  
-  withdrawAmount           Required 
+|**paramters** | accountNumber| depositAmount|
+ |:--: | :---: |:---:|
+ |**type** | Required |Required|
 
   
   Example  :   http://localhost:8080/atm/withdraw?accountNumber=1000&amount=1
